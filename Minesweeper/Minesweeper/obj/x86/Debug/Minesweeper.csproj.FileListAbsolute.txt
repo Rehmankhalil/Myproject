@@ -1,0 +1,17 @@
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Form1.resources
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.exe
+C:\Users\NCLab-04\Desktop\Ahmad\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.pdb
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.exe
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.pdb
+D:\project\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+D:\project\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csprojResolveAssemblyReference.cache
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Form1.resources
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Properties.Resources.resources
+D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csproj.GenerateResource.Cache
