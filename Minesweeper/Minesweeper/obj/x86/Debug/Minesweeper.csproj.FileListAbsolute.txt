@@ -15,3 +15,11 @@ D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csprojResolveAssemb
 D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Form1.resources
 D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Properties.Resources.resources
 D:\project\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csproj.GenerateResource.Cache
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.exe
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.pdb
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csprojResolveAssemblyReference.cache
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Form1.resources
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.Properties.Resources.resources
+D:\Myproject\Minesweeper\Minesweeper\obj\x86\Debug\Minesweeper.csproj.GenerateResource.Cache
+D:\Myproject\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+D:\Myproject\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
