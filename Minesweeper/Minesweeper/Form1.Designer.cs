@@ -100,8 +100,8 @@
             this.cell_11 = new System.Windows.Forms.Button();
             this.cell_2 = new System.Windows.Forms.Button();
             this.cell_3 = new System.Windows.Forms.Button();
-            this.cell_1 = new System.Windows.Forms.Button();
             this.timerLabel = new System.Windows.Forms.Label();
+            this.cell_1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -989,20 +989,6 @@
             this.cell_3.UseVisualStyleBackColor = true;
             this.cell_3.Click += new System.EventHandler(this.square_Click);
             // 
-            // cell_1
-            // 
-            this.cell_1.AccessibleName = "";
-            this.cell_1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cell_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.cell_1.Location = new System.Drawing.Point(39, 97);
-            this.cell_1.Margin = new System.Windows.Forms.Padding(0);
-            this.cell_1.Name = "cell_1";
-            this.cell_1.Size = new System.Drawing.Size(25, 25);
-            this.cell_1.TabIndex = 135;
-            this.cell_1.Tag = "";
-            this.cell_1.UseVisualStyleBackColor = true;
-            this.cell_1.Click += new System.EventHandler(this.square_Click);
-            // 
             // timerLabel
             // 
             this.timerLabel.AutoSize = true;
@@ -1014,11 +1000,24 @@
             this.timerLabel.Size = new System.Drawing.Size(0, 29);
             this.timerLabel.TabIndex = 167;
             // 
+            // cell_1
+            // 
+            this.cell_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cell_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cell_1.Location = new System.Drawing.Point(39, 97);
+            this.cell_1.Margin = new System.Windows.Forms.Padding(0);
+            this.cell_1.Name = "cell_1";
+            this.cell_1.Size = new System.Drawing.Size(25, 25);
+            this.cell_1.TabIndex = 168;
+            this.cell_1.Tag = "";
+            this.cell_1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(258, 295);
+            this.Controls.Add(this.cell_1);
             this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.cell_32);
             this.Controls.Add(this.cell_30);
@@ -1051,7 +1050,6 @@
             this.Controls.Add(this.cell_11);
             this.Controls.Add(this.cell_2);
             this.Controls.Add(this.cell_3);
-            this.Controls.Add(this.cell_1);
             this.Controls.Add(this.cell_64);
             this.Controls.Add(this.cell_62);
             this.Controls.Add(this.cell_61);
@@ -1169,9 +1167,9 @@
         private System.Windows.Forms.Button cell_11;
         private System.Windows.Forms.Button cell_2;
         private System.Windows.Forms.Button cell_3;
-        private System.Windows.Forms.Button cell_1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label timerLabel;
+        private System.Windows.Forms.Button cell_1;
 
     }
 }
