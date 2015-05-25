@@ -19,7 +19,7 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-           
+            //HINT For SELF: try using arr[0, 0].ImageKey = "x"; for mine and something else for others.
             
         }
 
@@ -56,13 +56,23 @@ namespace Minesweeper
         private void square_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            btn.Visible = false;
+           
+            MessageBox.Show(btn.Tag.ToString());
+            int selColumn;
+            int selRow;
+            string tempstr = (string)btn.Tag;
+            int tempTag = Int32.Parse(tempstr);
+            selColumn = tempTag % 8;
+            selRow = tempTag / 8;
+
+            btn.Text = value[selRow, selColumn].ToString();
             
 
         }
         public static Button[,] arr = new Button[8, 8];
         public void set_Buttons()
         {
+            
             arr[0, 0] = cell_1;
             arr[0, 1] = cell_2;
             arr[0, 2] = cell_3;
@@ -130,119 +140,124 @@ namespace Minesweeper
           
         }
 
-        public void settingBoard()
+       public static string[,] value = new string[8, 8];
+        public static void settingBoard()
         {
-             Random rand = new Random();
-             
-                    // creating an array of 8*8 to represent a board of 8*8 
-            int mine = 0;
+            Random rand = new Random();
 
+            // creating an array of 8*8 to represent a board of 8*8 
+            int mine = 0;
             
+
             for (int row = 0; row < 8; row++)     //iterating through each cell
             {
                 for (int column = 0; column < 8; column++)
                 {
-                    if (mine < 20)
+                    if (mine < 15)
                     {
                         int temp = rand.Next(0, 2);
-                        arr[row, column].Text = temp.ToString(); //either add a mine or not. mine=1,nomine=0.
+                        value[row, column] = temp.ToString(); //either add a mine or not. mine=1,nomine=0.
 
-                        if (arr[row, column].Text == "1")              
+                        if (value[row, column] == "1")
                         {
-                            arr[row, column].Text = "9";               //mine =9
+
+                            value[row, column] = "x";               //mine =9
                             mine++;     //when a mine is added
                         }
                     }
                     else
                     {
-                        arr[row, column].Text = "0";      //number of mines reached , make all other cells mine free
+                        value[row, column] = "0";
+                        //number of mines reached , make all other cells mine free
 
                     }
                 }
             }
+
 
             int cellValue = 0;
             for (int row = 0; row < 8; row++)             //iterating through the array board to 
             {                                       //set non-mine area to show the number of neighbouring mines
                 for (int column = 0; column < 8; column++)
                 {
-                    
-                  if (arr[row, column].Text == "0")
+
+                    if (value[row, column] == "0")
                     {
-//----------------------------------------------------------------------------------------------------------------
+                        //----------------------------------------------------------------------------------------------------------------
                         if (row - 1 < 0)            //Top side
-                      {
-                          if (row - 1 < 0 && column - 1 < 0)          //Top left cell
-                          {
-
-                              if (arr[row, column + 1].Text == "9")        //4
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column + 1].Text == "9")      //5
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column].Text == "9")        //6
-                              {
-                                  cellValue++;
-                              }
-                          }
-                          else if (row - 1 < 0 && column + 1 > 7)      // top right cell
-                          {
-
-                              if (arr[row + 1, column].Text == "9")        //6
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column - 1].Text == "9")      //7
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row, column - 1].Text == "9")        //8
-                              {
-                                  cellValue++;
-                              }
-                          }
-                          else {                                    //Top side cells
-                              if (arr[row, column + 1].Text == "9")        //4
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column + 1].Text == "9")      //5
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column].Text == "9")        //6
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row + 1, column - 1].Text == "9")      //7
-                              {
-                                  cellValue++;
-                              }
-                              if (arr[row, column - 1].Text == "9")        //8
-                              {
-                                  cellValue++;
-                              }
-                          }
-                      }
-
-//----------------------------------------------------------------------------------------------------------------
-                    else if(column -1 < 0)              //left side
                         {
                             if (row - 1 < 0 && column - 1 < 0)          //Top left cell
                             {
 
-                                if (arr[row, column + 1].Text == "9")        //4
+                                if (value[row, column + 1] == "x")        //4
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row + 1, column + 1].Text == "9")      //5
+                                if (value[row + 1, column + 1] == "x")      //5
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row + 1, column].Text == "9")        //6
+                                if (value[row + 1, column] == "x")        //6
+                                {
+                                    cellValue++;
+                                }
+                            }
+                            else if (row - 1 < 0 && column + 1 > 7)      // top right cell
+                            {
+
+                                if (value[row + 1, column] == "x")        //6
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column - 1] == "x")      //7
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column - 1] == "x")        //8
+                                {
+                                    cellValue++;
+                                }
+                            }
+                            else
+                            {                                    //Top side cells
+                                if (value[row, column + 1] == "x")        //4
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column + 1] == "x")      //5
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column] == "x")        //6
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column - 1] == "x")      //7
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column - 1] == "x")        //8
+                                {
+                                    cellValue++;
+                                }
+                            }
+                        }
+
+//----------------------------------------------------------------------------------------------------------------
+                        else if (column - 1 < 0)              //left side
+                        {
+                            if (row - 1 < 0 && column - 1 < 0)          //Top left cell
+                            {
+
+                                if (value[row, column + 1] == "x")        //4
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column + 1] == "x")      //5
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column] == "x")        //6
                                 {
                                     cellValue++;
                                 }
@@ -250,15 +265,15 @@ namespace Minesweeper
                             else if (row + 1 > 7 && column - 1 < 0)     //bottom left cell
                             {
 
-                                if (arr[row - 1, column].Text == "9")        //2
+                                if (value[row - 1, column] == "x")        //2
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row - 1, column + 1].Text == "9")      //3
+                                if (value[row - 1, column + 1] == "x")      //3
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row, column + 1].Text == "9")        //4
+                                if (value[row, column + 1] == "x")        //4
                                 {
                                     cellValue++;
                                 }
@@ -266,185 +281,192 @@ namespace Minesweeper
                             }
                             else                                //left side  cells
                             {
-                                if (arr[row - 1, column].Text == "9")        //2
+                                if (value[row - 1, column] == "x")        //2
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row - 1, column + 1].Text == "9")      //3
+                                if (value[row - 1, column + 1] == "x")      //3
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row, column + 1].Text == "9")        //4
+                                if (value[row, column + 1] == "x")        //4
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row + 1, column + 1].Text == "9")      //5
+                                if (value[row + 1, column + 1] == "x")      //5
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row + 1, column].Text == "9")        //6
+                                if (value[row + 1, column] == "x")        //6
                                 {
                                     cellValue++;
                                 }
                             }
-                    }
+                        }
 
 
-//----------------------------------------------------------------------------------------------------------------
-                    else if (row +1 > 7)                        //bottom side
+    //----------------------------------------------------------------------------------------------------------------
+                        else if (row + 1 > 7)                        //bottom side
                         {
-                        if (row + 1 > 7 && column + 1 > 7)      // bottom right cell
+                            if (row + 1 > 7 && column + 1 > 7)      // bottom right cell
                             {
-                                if (arr[row - 1, column - 1].Text == "9")        //1
+                                if (value[row - 1, column - 1] == "x")        //1
                                 {
                                     cellValue++;
                                 }
-                                if (arr[row - 1, column].Text == "9")        //2
+                                if (value[row - 1, column] == "x")        //2
                                 {
                                     cellValue++;
                                 }
 
-                                if (arr[row, column - 1].Text == "9")        //8
+                                if (value[row, column - 1] == "x")        //8
                                 {
                                     cellValue++;
                                 }
                             }
-                        else if (row + 1 > 7 && column - 1 < 0)     //bottom left cell
+                            else if (row + 1 > 7 && column - 1 < 0)     //bottom left cell
+                            {
+
+                                if (value[row - 1, column] == "x")        //2
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row - 1, column + 1] == "x")      //3
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column + 1] == "x")        //4
+                                {
+                                    cellValue++;
+                                }
+
+                            }
+                            else
+                            {                                      //Bottom side cells
+                                if (value[row - 1, column - 1] == "x")        //1
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row - 1, column] == "x")        //2
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row - 1, column + 1] == "x")      //3
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column + 1] == "x")        //4
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column - 1] == "x")        //8
+                                {
+                                    cellValue++;
+                                }
+                            }
+                        }
+                        //----------------------------------------------------------------------------------------------------------------
+                        else if (column + 1 > 7)                        //Right side
                         {
+                            if (row - 1 < 0 && column + 1 > 7)      // top right cell
+                            {
 
-                            if (arr[row - 1, column].Text == "9")        //2
-                            {
-                                cellValue++;
+                                if (value[row + 1, column] == "x")        //6
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row + 1, column - 1] == "x")      //7
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row, column - 1] == "x")        //8
+                                {
+                                    cellValue++;
+                                }
                             }
-                            if (arr[row - 1, column + 1].Text == "9")      //3
+                            else if (row + 1 > 7 && column + 1 > 7)      // bottom right cell
                             {
-                                cellValue++;
-                            }
-                            if (arr[row, column + 1].Text == "9")        //4
-                            {
-                                cellValue++;
+                                if (value[row - 1, column - 1] == "x")        //1
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row - 1, column] == "x")        //2
+                                {
+                                    cellValue++;
+                                }
+
+                                if (value[row, column - 1] == "x")        //8
+                                {
+                                    cellValue++;
+                                }
                             }
 
+                            else
+                            {                                         // Right side cells
+                                if (value[row - 1, column - 1] == "x")        //1
+                                {
+                                    cellValue++;
+                                }
+                                if (value[row - 1, column] == "x")        //2
+                                {
+                                    cellValue++;
+                                }
+                            }
+                            if (value[row + 1, column] == "x")        //6
+                            {
+                                cellValue++;
+                            }
+                            if (value[row + 1, column - 1] == "x")      //7
+                            {
+                                cellValue++;
+                            }
+                            if (value[row, column - 1] == "x")        //8
+                            {
+                                cellValue++;
+                            }
                         }
-                        else {                                      //Bottom side cells
-                            if (arr[row - 1, column - 1].Text == "9")        //1
+                        //----------------------------------------------------------------------------------------------------------------
+                        else
+                        {                                                           // All other cells in Mid
+                            if (value[row - 1, column - 1] == "x")        //1
                             {
                                 cellValue++;
                             }
-                            if (arr[row - 1, column].Text == "9")        //2
+                            if (value[row - 1, column] == "x")        //2
                             {
                                 cellValue++;
                             }
-                            if (arr[row - 1, column + 1].Text == "9")      //3
+                            if (value[row - 1, column + 1] == "x")      //3
                             {
                                 cellValue++;
                             }
-                            if (arr[row, column + 1].Text == "9")        //4
+                            if (value[row, column + 1] == "x")        //4
                             {
                                 cellValue++;
                             }
-                            if (arr[row, column - 1].Text == "9")        //8
+                            if (value[row + 1, column + 1] == "x")      //5
+                            {
+                                cellValue++;
+                            }
+                            if (value[row + 1, column] == "x")        //6
+                            {
+                                cellValue++;
+                            }
+                            if (value[row + 1, column - 1] == "x")      //7
+                            {
+                                cellValue++;
+                            }
+                            if (value[row, column - 1] == "x")        //8
                             {
                                 cellValue++;
                             }
                         }
-                    }
-//----------------------------------------------------------------------------------------------------------------
-               else if(column+1 > 7)                        //Right side
+                        if (cellValue != 0)
                         {
-                    if (row - 1 < 0 && column + 1 > 7)      // top right cell
-                              {
-
-                                  if (arr[row + 1, column].Text == "9")        //6
-                                  {
-                                      cellValue++;
-                                  }
-                                  if (arr[row + 1, column - 1].Text == "9")      //7
-                                  {
-                                      cellValue++;
-                                  }
-                                  if (arr[row, column - 1].Text == "9")        //8
-                                  {
-                                      cellValue++;
-                                  }
-                              }
-                     else if (row + 1 > 7 && column + 1 > 7)      // bottom right cell
-                            {
-                                if (arr[row - 1, column - 1].Text == "9")        //1
-                                {
-                                    cellValue++;
-                                }
-                                if (arr[row - 1, column].Text == "9")        //2
-                                {
-                                    cellValue++;
-                                }
-
-                                if (arr[row, column - 1].Text == "9")        //8
-                                {
-                                    cellValue++;
-                                }
-                            }
-                            
-                     else {                                         // Right side cells
-                         if (arr[row - 1, column - 1].Text == "9")        //1
-                                {
-                                    cellValue++;
-                                }
-                         if (arr[row - 1, column].Text == "9")        //2
-                                {
-                                    cellValue++;
-                                }
-                                }
-                    if (arr[row + 1, column].Text == "9")        //6
-                                {
-                                    cellValue++;
-                                }
-                    if (arr[row + 1, column - 1].Text == "9")      //7
-                                {
-                                    cellValue++;
-                                }
-                    if (arr[row, column - 1].Text == "9")        //8
-                                {
-                                    cellValue++;
-                                }
+                            value[row, column] = cellValue.ToString();
+                            cellValue = 0;
                         }
-//----------------------------------------------------------------------------------------------------------------
-       else{                                                           // All other cells in Mid
-                            if (arr[row - 1, column - 1].Text == "9")        //1
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row - 1, column].Text == "9")        //2
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row - 1, column + 1].Text == "9")      //3
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row, column + 1].Text == "9")        //4
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row + 1, column + 1].Text == "9")      //5
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row + 1, column].Text == "9")        //6
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row + 1, column - 1].Text == "9")      //7
-                            {
-                                cellValue++;
-                            }
-                            if (arr[row, column - 1].Text == "9")        //8
-                            {
-                                cellValue++;
-                            }
-                        }
-                        arr[row, column].Text = cellValue.ToString();
-                        cellValue = 0;
+                        else { value[row, column] = "0"; }            //to represent cells with 0 value as empty
 
                     }
                 }

@@ -179,7 +179,7 @@
             this.cell_33.Name = "cell_33";
             this.cell_33.Size = new System.Drawing.Size(25, 25);
             this.cell_33.TabIndex = 62;
-            this.cell_33.Tag = "";
+            this.cell_33.Tag = "32";
             this.cell_33.UseVisualStyleBackColor = true;
             this.cell_33.Click += new System.EventHandler(this.square_Click);
             // 
@@ -192,7 +192,7 @@
             this.cell_35.Name = "cell_35";
             this.cell_35.Size = new System.Drawing.Size(25, 25);
             this.cell_35.TabIndex = 104;
-            this.cell_35.Tag = "";
+            this.cell_35.Tag = "34";
             this.cell_35.UseVisualStyleBackColor = true;
             this.cell_35.Click += new System.EventHandler(this.square_Click);
             // 
@@ -205,7 +205,7 @@
             this.cell_34.Name = "cell_34";
             this.cell_34.Size = new System.Drawing.Size(25, 25);
             this.cell_34.TabIndex = 105;
-            this.cell_34.Tag = "";
+            this.cell_34.Tag = "33";
             this.cell_34.UseVisualStyleBackColor = true;
             this.cell_34.Click += new System.EventHandler(this.square_Click);
             // 
@@ -218,7 +218,7 @@
             this.cell_43.Name = "cell_43";
             this.cell_43.Size = new System.Drawing.Size(25, 25);
             this.cell_43.TabIndex = 106;
-            this.cell_43.Tag = "";
+            this.cell_43.Tag = "42";
             this.cell_43.UseVisualStyleBackColor = true;
             this.cell_43.Click += new System.EventHandler(this.square_Click);
             // 
@@ -231,7 +231,7 @@
             this.cell_36.Name = "cell_36";
             this.cell_36.Size = new System.Drawing.Size(25, 25);
             this.cell_36.TabIndex = 107;
-            this.cell_36.Tag = "";
+            this.cell_36.Tag = "35";
             this.cell_36.UseVisualStyleBackColor = true;
             this.cell_36.Click += new System.EventHandler(this.square_Click);
             // 
@@ -244,7 +244,7 @@
             this.cell_41.Name = "cell_41";
             this.cell_41.Size = new System.Drawing.Size(25, 25);
             this.cell_41.TabIndex = 108;
-            this.cell_41.Tag = "";
+            this.cell_41.Tag = "40";
             this.cell_41.UseVisualStyleBackColor = true;
             this.cell_41.Click += new System.EventHandler(this.square_Click);
             // 
@@ -257,7 +257,7 @@
             this.cell_42.Name = "cell_42";
             this.cell_42.Size = new System.Drawing.Size(25, 25);
             this.cell_42.TabIndex = 109;
-            this.cell_42.Tag = "";
+            this.cell_42.Tag = "41";
             this.cell_42.UseVisualStyleBackColor = true;
             this.cell_42.Click += new System.EventHandler(this.square_Click);
             // 
@@ -270,7 +270,7 @@
             this.cell_44.Name = "cell_44";
             this.cell_44.Size = new System.Drawing.Size(25, 25);
             this.cell_44.TabIndex = 110;
-            this.cell_44.Tag = "";
+            this.cell_44.Tag = "43";
             this.cell_44.UseVisualStyleBackColor = true;
             this.cell_44.Click += new System.EventHandler(this.square_Click);
             // 
@@ -283,7 +283,7 @@
             this.cell_60.Name = "cell_60";
             this.cell_60.Size = new System.Drawing.Size(25, 25);
             this.cell_60.TabIndex = 118;
-            this.cell_60.Tag = "";
+            this.cell_60.Tag = "59";
             this.cell_60.UseVisualStyleBackColor = true;
             this.cell_60.Click += new System.EventHandler(this.square_Click);
             // 
@@ -296,7 +296,7 @@
             this.cell_58.Name = "cell_58";
             this.cell_58.Size = new System.Drawing.Size(25, 25);
             this.cell_58.TabIndex = 117;
-            this.cell_58.Tag = "";
+            this.cell_58.Tag = "57";
             this.cell_58.UseVisualStyleBackColor = true;
             this.cell_58.Click += new System.EventHandler(this.square_Click);
             // 
@@ -309,7 +309,7 @@
             this.cell_57.Name = "cell_57";
             this.cell_57.Size = new System.Drawing.Size(25, 25);
             this.cell_57.TabIndex = 116;
-            this.cell_57.Tag = "";
+            this.cell_57.Tag = "56";
             this.cell_57.UseVisualStyleBackColor = true;
             this.cell_57.Click += new System.EventHandler(this.square_Click);
             // 
@@ -322,7 +322,7 @@
             this.cell_52.Name = "cell_52";
             this.cell_52.Size = new System.Drawing.Size(25, 25);
             this.cell_52.TabIndex = 115;
-            this.cell_52.Tag = "";
+            this.cell_52.Tag = "51";
             this.cell_52.UseVisualStyleBackColor = true;
             this.cell_52.Click += new System.EventHandler(this.square_Click);
             // 
@@ -335,7 +335,7 @@
             this.cell_59.Name = "cell_59";
             this.cell_59.Size = new System.Drawing.Size(25, 25);
             this.cell_59.TabIndex = 114;
-            this.cell_59.Tag = "";
+            this.cell_59.Tag = "58";
             this.cell_59.UseVisualStyleBackColor = true;
             this.cell_59.Click += new System.EventHandler(this.square_Click);
             // 
@@ -348,7 +348,7 @@
             this.cell_50.Name = "cell_50";
             this.cell_50.Size = new System.Drawing.Size(25, 25);
             this.cell_50.TabIndex = 113;
-            this.cell_50.Tag = "";
+            this.cell_50.Tag = "49";
             this.cell_50.UseVisualStyleBackColor = true;
             this.cell_50.Click += new System.EventHandler(this.square_Click);
             // 
@@ -361,7 +361,7 @@
             this.cell_51.Name = "cell_51";
             this.cell_51.Size = new System.Drawing.Size(25, 25);
             this.cell_51.TabIndex = 112;
-            this.cell_51.Tag = "";
+            this.cell_51.Tag = "50";
             this.cell_51.UseVisualStyleBackColor = true;
             this.cell_51.Click += new System.EventHandler(this.square_Click);
             // 
@@ -374,7 +374,7 @@
             this.cell_49.Name = "cell_49";
             this.cell_49.Size = new System.Drawing.Size(25, 25);
             this.cell_49.TabIndex = 111;
-            this.cell_49.Tag = "";
+            this.cell_49.Tag = "48";
             this.cell_49.UseVisualStyleBackColor = true;
             this.cell_49.Click += new System.EventHandler(this.square_Click);
             // 
@@ -387,7 +387,7 @@
             this.cell_48.Name = "cell_48";
             this.cell_48.Size = new System.Drawing.Size(25, 25);
             this.cell_48.TabIndex = 126;
-            this.cell_48.Tag = "";
+            this.cell_48.Tag = "47";
             this.cell_48.UseVisualStyleBackColor = true;
             this.cell_48.Click += new System.EventHandler(this.square_Click);
             // 
@@ -400,7 +400,7 @@
             this.cell_46.Name = "cell_46";
             this.cell_46.Size = new System.Drawing.Size(25, 25);
             this.cell_46.TabIndex = 125;
-            this.cell_46.Tag = "";
+            this.cell_46.Tag = "45";
             this.cell_46.UseVisualStyleBackColor = true;
             this.cell_46.Click += new System.EventHandler(this.square_Click);
             // 
@@ -413,7 +413,7 @@
             this.cell_45.Name = "cell_45";
             this.cell_45.Size = new System.Drawing.Size(25, 25);
             this.cell_45.TabIndex = 124;
-            this.cell_45.Tag = "";
+            this.cell_45.Tag = "44";
             this.cell_45.UseVisualStyleBackColor = true;
             this.cell_45.Click += new System.EventHandler(this.square_Click);
             // 
@@ -426,7 +426,7 @@
             this.cell_40.Name = "cell_40";
             this.cell_40.Size = new System.Drawing.Size(25, 25);
             this.cell_40.TabIndex = 123;
-            this.cell_40.Tag = "";
+            this.cell_40.Tag = "39";
             this.cell_40.UseVisualStyleBackColor = true;
             this.cell_40.Click += new System.EventHandler(this.square_Click);
             // 
@@ -439,7 +439,7 @@
             this.cell_47.Name = "cell_47";
             this.cell_47.Size = new System.Drawing.Size(25, 25);
             this.cell_47.TabIndex = 122;
-            this.cell_47.Tag = "";
+            this.cell_47.Tag = "46";
             this.cell_47.UseVisualStyleBackColor = true;
             this.cell_47.Click += new System.EventHandler(this.square_Click);
             // 
@@ -452,7 +452,7 @@
             this.cell_38.Name = "cell_38";
             this.cell_38.Size = new System.Drawing.Size(25, 25);
             this.cell_38.TabIndex = 121;
-            this.cell_38.Tag = "";
+            this.cell_38.Tag = "37";
             this.cell_38.UseVisualStyleBackColor = true;
             this.cell_38.Click += new System.EventHandler(this.square_Click);
             // 
@@ -465,7 +465,7 @@
             this.cell_39.Name = "cell_39";
             this.cell_39.Size = new System.Drawing.Size(25, 25);
             this.cell_39.TabIndex = 120;
-            this.cell_39.Tag = "";
+            this.cell_39.Tag = "38";
             this.cell_39.UseVisualStyleBackColor = true;
             this.cell_39.Click += new System.EventHandler(this.square_Click);
             // 
@@ -478,7 +478,7 @@
             this.cell_37.Name = "cell_37";
             this.cell_37.Size = new System.Drawing.Size(25, 25);
             this.cell_37.TabIndex = 119;
-            this.cell_37.Tag = "";
+            this.cell_37.Tag = "36";
             this.cell_37.UseVisualStyleBackColor = true;
             this.cell_37.Click += new System.EventHandler(this.square_Click);
             // 
@@ -491,7 +491,7 @@
             this.cell_64.Name = "cell_64";
             this.cell_64.Size = new System.Drawing.Size(25, 25);
             this.cell_64.TabIndex = 134;
-            this.cell_64.Tag = "";
+            this.cell_64.Tag = "63";
             this.cell_64.UseVisualStyleBackColor = true;
             this.cell_64.Click += new System.EventHandler(this.square_Click);
             // 
@@ -504,7 +504,7 @@
             this.cell_62.Name = "cell_62";
             this.cell_62.Size = new System.Drawing.Size(25, 25);
             this.cell_62.TabIndex = 133;
-            this.cell_62.Tag = "";
+            this.cell_62.Tag = "61";
             this.cell_62.UseVisualStyleBackColor = true;
             this.cell_62.Click += new System.EventHandler(this.square_Click);
             // 
@@ -517,7 +517,7 @@
             this.cell_61.Name = "cell_61";
             this.cell_61.Size = new System.Drawing.Size(25, 25);
             this.cell_61.TabIndex = 132;
-            this.cell_61.Tag = "";
+            this.cell_61.Tag = "60";
             this.cell_61.UseVisualStyleBackColor = true;
             this.cell_61.Click += new System.EventHandler(this.square_Click);
             // 
@@ -530,7 +530,7 @@
             this.cell_56.Name = "cell_56";
             this.cell_56.Size = new System.Drawing.Size(25, 25);
             this.cell_56.TabIndex = 131;
-            this.cell_56.Tag = "";
+            this.cell_56.Tag = "55";
             this.cell_56.UseVisualStyleBackColor = true;
             this.cell_56.Click += new System.EventHandler(this.square_Click);
             // 
@@ -543,7 +543,7 @@
             this.cell_63.Name = "cell_63";
             this.cell_63.Size = new System.Drawing.Size(25, 25);
             this.cell_63.TabIndex = 130;
-            this.cell_63.Tag = "";
+            this.cell_63.Tag = "62";
             this.cell_63.UseVisualStyleBackColor = true;
             this.cell_63.Click += new System.EventHandler(this.square_Click);
             // 
@@ -556,7 +556,7 @@
             this.cell_54.Name = "cell_54";
             this.cell_54.Size = new System.Drawing.Size(25, 25);
             this.cell_54.TabIndex = 129;
-            this.cell_54.Tag = "";
+            this.cell_54.Tag = "53";
             this.cell_54.UseVisualStyleBackColor = true;
             this.cell_54.Click += new System.EventHandler(this.square_Click);
             // 
@@ -569,7 +569,7 @@
             this.cell_55.Name = "cell_55";
             this.cell_55.Size = new System.Drawing.Size(25, 25);
             this.cell_55.TabIndex = 128;
-            this.cell_55.Tag = "";
+            this.cell_55.Tag = "54";
             this.cell_55.UseVisualStyleBackColor = true;
             this.cell_55.Click += new System.EventHandler(this.square_Click);
             // 
@@ -582,7 +582,7 @@
             this.cell_53.Name = "cell_53";
             this.cell_53.Size = new System.Drawing.Size(25, 25);
             this.cell_53.TabIndex = 127;
-            this.cell_53.Tag = "";
+            this.cell_53.Tag = "52";
             this.cell_53.UseVisualStyleBackColor = true;
             this.cell_53.Click += new System.EventHandler(this.square_Click);
             // 
@@ -595,7 +595,7 @@
             this.cell_32.Name = "cell_32";
             this.cell_32.Size = new System.Drawing.Size(25, 25);
             this.cell_32.TabIndex = 166;
-            this.cell_32.Tag = "";
+            this.cell_32.Tag = "31";
             this.cell_32.UseVisualStyleBackColor = true;
             this.cell_32.Click += new System.EventHandler(this.square_Click);
             // 
@@ -608,7 +608,7 @@
             this.cell_30.Name = "cell_30";
             this.cell_30.Size = new System.Drawing.Size(25, 25);
             this.cell_30.TabIndex = 165;
-            this.cell_30.Tag = "";
+            this.cell_30.Tag = "29";
             this.cell_30.UseVisualStyleBackColor = true;
             this.cell_30.Click += new System.EventHandler(this.square_Click);
             // 
@@ -621,7 +621,7 @@
             this.cell_29.Name = "cell_29";
             this.cell_29.Size = new System.Drawing.Size(25, 25);
             this.cell_29.TabIndex = 164;
-            this.cell_29.Tag = "";
+            this.cell_29.Tag = "28";
             this.cell_29.UseVisualStyleBackColor = true;
             this.cell_29.Click += new System.EventHandler(this.square_Click);
             // 
@@ -634,7 +634,7 @@
             this.cell_24.Name = "cell_24";
             this.cell_24.Size = new System.Drawing.Size(25, 25);
             this.cell_24.TabIndex = 163;
-            this.cell_24.Tag = "";
+            this.cell_24.Tag = "23";
             this.cell_24.UseVisualStyleBackColor = true;
             this.cell_24.Click += new System.EventHandler(this.square_Click);
             // 
@@ -647,7 +647,7 @@
             this.cell_31.Name = "cell_31";
             this.cell_31.Size = new System.Drawing.Size(25, 25);
             this.cell_31.TabIndex = 162;
-            this.cell_31.Tag = "";
+            this.cell_31.Tag = "30";
             this.cell_31.UseVisualStyleBackColor = true;
             this.cell_31.Click += new System.EventHandler(this.square_Click);
             // 
@@ -660,7 +660,7 @@
             this.cell_22.Name = "cell_22";
             this.cell_22.Size = new System.Drawing.Size(25, 25);
             this.cell_22.TabIndex = 161;
-            this.cell_22.Tag = "";
+            this.cell_22.Tag = "21";
             this.cell_22.UseVisualStyleBackColor = true;
             this.cell_22.Click += new System.EventHandler(this.square_Click);
             // 
@@ -673,7 +673,7 @@
             this.cell_23.Name = "cell_23";
             this.cell_23.Size = new System.Drawing.Size(25, 25);
             this.cell_23.TabIndex = 160;
-            this.cell_23.Tag = "";
+            this.cell_23.Tag = "22";
             this.cell_23.UseVisualStyleBackColor = true;
             this.cell_23.Click += new System.EventHandler(this.square_Click);
             // 
@@ -686,7 +686,7 @@
             this.cell_21.Name = "cell_21";
             this.cell_21.Size = new System.Drawing.Size(25, 25);
             this.cell_21.TabIndex = 159;
-            this.cell_21.Tag = "";
+            this.cell_21.Tag = "20";
             this.cell_21.UseVisualStyleBackColor = true;
             this.cell_21.Click += new System.EventHandler(this.square_Click);
             // 
@@ -699,7 +699,7 @@
             this.cell_16.Name = "cell_16";
             this.cell_16.Size = new System.Drawing.Size(25, 25);
             this.cell_16.TabIndex = 158;
-            this.cell_16.Tag = "";
+            this.cell_16.Tag = "15";
             this.cell_16.UseVisualStyleBackColor = true;
             this.cell_16.Click += new System.EventHandler(this.square_Click);
             // 
@@ -712,7 +712,7 @@
             this.cell_14.Name = "cell_14";
             this.cell_14.Size = new System.Drawing.Size(25, 25);
             this.cell_14.TabIndex = 157;
-            this.cell_14.Tag = "";
+            this.cell_14.Tag = "13";
             this.cell_14.UseVisualStyleBackColor = true;
             this.cell_14.Click += new System.EventHandler(this.square_Click);
             // 
@@ -725,7 +725,7 @@
             this.cell_13.Name = "cell_13";
             this.cell_13.Size = new System.Drawing.Size(25, 25);
             this.cell_13.TabIndex = 156;
-            this.cell_13.Tag = "";
+            this.cell_13.Tag = "12";
             this.cell_13.UseVisualStyleBackColor = true;
             this.cell_13.Click += new System.EventHandler(this.square_Click);
             // 
@@ -738,7 +738,7 @@
             this.cell_8.Name = "cell_8";
             this.cell_8.Size = new System.Drawing.Size(25, 25);
             this.cell_8.TabIndex = 155;
-            this.cell_8.Tag = "";
+            this.cell_8.Tag = "7";
             this.cell_8.UseVisualStyleBackColor = true;
             this.cell_8.Click += new System.EventHandler(this.square_Click);
             // 
@@ -751,7 +751,7 @@
             this.cell_15.Name = "cell_15";
             this.cell_15.Size = new System.Drawing.Size(25, 25);
             this.cell_15.TabIndex = 154;
-            this.cell_15.Tag = "";
+            this.cell_15.Tag = "14";
             this.cell_15.UseVisualStyleBackColor = true;
             this.cell_15.Click += new System.EventHandler(this.square_Click);
             // 
@@ -764,20 +764,19 @@
             this.cell_6.Name = "cell_6";
             this.cell_6.Size = new System.Drawing.Size(25, 25);
             this.cell_6.TabIndex = 153;
-            this.cell_6.Tag = "";
+            this.cell_6.Tag = "5";
             this.cell_6.UseVisualStyleBackColor = true;
             this.cell_6.Click += new System.EventHandler(this.square_Click);
             // 
             // cell_7
             // 
-            this.cell_7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cell_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.cell_7.Location = new System.Drawing.Point(171, 97);
             this.cell_7.Margin = new System.Windows.Forms.Padding(0);
             this.cell_7.Name = "cell_7";
             this.cell_7.Size = new System.Drawing.Size(25, 25);
             this.cell_7.TabIndex = 152;
-            this.cell_7.Tag = "";
+            this.cell_7.Tag = "6";
             this.cell_7.UseVisualStyleBackColor = true;
             this.cell_7.Click += new System.EventHandler(this.square_Click);
             // 
@@ -790,7 +789,7 @@
             this.cell_5.Name = "cell_5";
             this.cell_5.Size = new System.Drawing.Size(25, 25);
             this.cell_5.TabIndex = 151;
-            this.cell_5.Tag = "";
+            this.cell_5.Tag = "4";
             this.cell_5.UseVisualStyleBackColor = true;
             this.cell_5.Click += new System.EventHandler(this.square_Click);
             // 
@@ -803,7 +802,7 @@
             this.cell_28.Name = "cell_28";
             this.cell_28.Size = new System.Drawing.Size(25, 25);
             this.cell_28.TabIndex = 150;
-            this.cell_28.Tag = "";
+            this.cell_28.Tag = "27";
             this.cell_28.UseVisualStyleBackColor = true;
             this.cell_28.Click += new System.EventHandler(this.square_Click);
             // 
@@ -816,7 +815,7 @@
             this.cell_26.Name = "cell_26";
             this.cell_26.Size = new System.Drawing.Size(25, 25);
             this.cell_26.TabIndex = 149;
-            this.cell_26.Tag = "";
+            this.cell_26.Tag = "25";
             this.cell_26.UseVisualStyleBackColor = true;
             this.cell_26.Click += new System.EventHandler(this.square_Click);
             // 
@@ -829,7 +828,7 @@
             this.cell_25.Name = "cell_25";
             this.cell_25.Size = new System.Drawing.Size(25, 25);
             this.cell_25.TabIndex = 148;
-            this.cell_25.Tag = "";
+            this.cell_25.Tag = "24";
             this.cell_25.UseVisualStyleBackColor = true;
             this.cell_25.Click += new System.EventHandler(this.square_Click);
             // 
@@ -842,7 +841,7 @@
             this.cell_20.Name = "cell_20";
             this.cell_20.Size = new System.Drawing.Size(25, 25);
             this.cell_20.TabIndex = 147;
-            this.cell_20.Tag = "";
+            this.cell_20.Tag = "19";
             this.cell_20.UseVisualStyleBackColor = true;
             this.cell_20.Click += new System.EventHandler(this.square_Click);
             // 
@@ -855,7 +854,7 @@
             this.cell_27.Name = "cell_27";
             this.cell_27.Size = new System.Drawing.Size(25, 25);
             this.cell_27.TabIndex = 146;
-            this.cell_27.Tag = "";
+            this.cell_27.Tag = "26";
             this.cell_27.UseVisualStyleBackColor = true;
             this.cell_27.Click += new System.EventHandler(this.square_Click);
             // 
@@ -868,7 +867,7 @@
             this.cell_18.Name = "cell_18";
             this.cell_18.Size = new System.Drawing.Size(25, 25);
             this.cell_18.TabIndex = 145;
-            this.cell_18.Tag = "";
+            this.cell_18.Tag = "17";
             this.cell_18.UseVisualStyleBackColor = true;
             this.cell_18.Click += new System.EventHandler(this.square_Click);
             // 
@@ -881,7 +880,7 @@
             this.cell_19.Name = "cell_19";
             this.cell_19.Size = new System.Drawing.Size(25, 25);
             this.cell_19.TabIndex = 144;
-            this.cell_19.Tag = "";
+            this.cell_19.Tag = "18";
             this.cell_19.UseVisualStyleBackColor = true;
             this.cell_19.Click += new System.EventHandler(this.square_Click);
             // 
@@ -894,7 +893,7 @@
             this.cell_17.Name = "cell_17";
             this.cell_17.Size = new System.Drawing.Size(25, 25);
             this.cell_17.TabIndex = 143;
-            this.cell_17.Tag = "";
+            this.cell_17.Tag = "16";
             this.cell_17.UseVisualStyleBackColor = true;
             this.cell_17.Click += new System.EventHandler(this.square_Click);
             // 
@@ -907,7 +906,7 @@
             this.cell_12.Name = "cell_12";
             this.cell_12.Size = new System.Drawing.Size(25, 25);
             this.cell_12.TabIndex = 142;
-            this.cell_12.Tag = "";
+            this.cell_12.Tag = "11";
             this.cell_12.UseVisualStyleBackColor = true;
             this.cell_12.Click += new System.EventHandler(this.square_Click);
             // 
@@ -920,7 +919,7 @@
             this.cell_10.Name = "cell_10";
             this.cell_10.Size = new System.Drawing.Size(25, 25);
             this.cell_10.TabIndex = 141;
-            this.cell_10.Tag = "";
+            this.cell_10.Tag = "9";
             this.cell_10.UseVisualStyleBackColor = true;
             this.cell_10.Click += new System.EventHandler(this.square_Click);
             // 
@@ -933,7 +932,7 @@
             this.cell_9.Name = "cell_9";
             this.cell_9.Size = new System.Drawing.Size(25, 25);
             this.cell_9.TabIndex = 140;
-            this.cell_9.Tag = "";
+            this.cell_9.Tag = "8";
             this.cell_9.UseVisualStyleBackColor = true;
             this.cell_9.Click += new System.EventHandler(this.square_Click);
             // 
@@ -946,7 +945,7 @@
             this.cell_4.Name = "cell_4";
             this.cell_4.Size = new System.Drawing.Size(25, 25);
             this.cell_4.TabIndex = 139;
-            this.cell_4.Tag = "";
+            this.cell_4.Tag = "3";
             this.cell_4.UseVisualStyleBackColor = true;
             this.cell_4.Click += new System.EventHandler(this.square_Click);
             // 
@@ -959,7 +958,7 @@
             this.cell_11.Name = "cell_11";
             this.cell_11.Size = new System.Drawing.Size(25, 25);
             this.cell_11.TabIndex = 138;
-            this.cell_11.Tag = "";
+            this.cell_11.Tag = "10";
             this.cell_11.UseVisualStyleBackColor = true;
             this.cell_11.Click += new System.EventHandler(this.square_Click);
             // 
@@ -972,7 +971,7 @@
             this.cell_2.Name = "cell_2";
             this.cell_2.Size = new System.Drawing.Size(25, 25);
             this.cell_2.TabIndex = 137;
-            this.cell_2.Tag = "";
+            this.cell_2.Tag = "1";
             this.cell_2.UseVisualStyleBackColor = true;
             this.cell_2.Click += new System.EventHandler(this.square_Click);
             // 
@@ -985,7 +984,7 @@
             this.cell_3.Name = "cell_3";
             this.cell_3.Size = new System.Drawing.Size(25, 25);
             this.cell_3.TabIndex = 136;
-            this.cell_3.Tag = "";
+            this.cell_3.Tag = "2";
             this.cell_3.UseVisualStyleBackColor = true;
             this.cell_3.Click += new System.EventHandler(this.square_Click);
             // 
@@ -1009,7 +1008,7 @@
             this.cell_1.Name = "cell_1";
             this.cell_1.Size = new System.Drawing.Size(25, 25);
             this.cell_1.TabIndex = 168;
-            this.cell_1.Tag = "";
+            this.cell_1.Tag = "0";
             this.cell_1.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -1084,6 +1083,7 @@
             this.Controls.Add(this.cell_33);
             this.Controls.Add(this.smileyButton);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Minesweeper";
