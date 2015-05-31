@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Timers;
 using Timer = System.Timers.Timer;
+using System.Threading;
 
 namespace Minesweeper
 {
@@ -43,31 +44,98 @@ namespace Minesweeper
             settingBoard();
         }
 
-      
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            settingBoard();
          
         }
+        //Form1 newobj = new Form1();
+        //public static void myTimer()
+        //{
 
-        
+        //    for (int time = 0; time < 999; time++)
+        //    {
 
+        //        label1.Text = time.ToString();
+        //        Thread.Sleep(1000);
+        //    }
+        //}
+
+        //public int clickcounter = 0;
         private void square_Click(object sender, EventArgs e)
         {
+            //Form1 newobj = new Form1();
+            //Thread timeThread = new Thread(Form1.myTimer);
+
+            //while (clickcounter == 0)
+            //{
+            //    timeThread.Start();
+            //    clickcounter++;
+            //}
             Button btn = (Button)sender;
-           
-            MessageBox.Show(btn.Tag.ToString());
+
+
             int selColumn;
             int selRow;
             string tempstr = (string)btn.Tag;
             int tempTag = Int32.Parse(tempstr);
             selColumn = tempTag % 8;
             selRow = tempTag / 8;
-
-            btn.Text = value[selRow, selColumn].ToString();
-            
-
+            btn.Text = value[selRow, selColumn];
+            btn.Enabled = false;
+            if (value[selRow, selColumn] == "x")
+            {
+                btn.Text = "";
+                Image mineImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\mine_minesweeper.PNG");
+                btn.BackgroundImage = mineImage;
+                MessageBox.Show("You Lost the game");
+            }
+            else
+            {
+                int tempvalue = Int32.Parse(value[selRow, selColumn]);
+                switch (tempvalue)
+                {
+                    case 0:
+                        Image zeroImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\0.PNG");
+                        btn.BackgroundImage = zeroImage; 
+                        break;
+                    case 1:
+                         Image oneImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\1.PNG");
+                        btn.BackgroundImage = oneImage; 
+                        break;
+                    case 2:
+                         Image twoImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\2.PNG");
+                         btn.BackgroundImage = twoImage; 
+                        break;
+                    case 3:
+                         Image threeImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\3.PNG");
+                         btn.BackgroundImage = threeImage; 
+                        break;
+                    case 4:
+                         Image fourImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\4.PNG");
+                         btn.BackgroundImage = fourImage; 
+                        break;
+                    case 5:
+                         Image fiveImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\5.PNG");
+                         btn.BackgroundImage = fiveImage; 
+                        break;
+                    case 6:
+                         Image sixImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\6.PNG");
+                         btn.BackgroundImage = sixImage; 
+                        break;
+                    case 7:
+                         Image sevenImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\7.PNG");
+                         btn.BackgroundImage = sevenImage; 
+                        break;
+                    case 8:
+                         Image eightImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\8.PNG");
+                         btn.BackgroundImage = eightImage; 
+                        break;
+                       
+                }
+            }
         }
         public static Button[,] arr = new Button[8, 8];
         public void set_Buttons()
