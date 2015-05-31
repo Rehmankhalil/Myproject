@@ -18,21 +18,36 @@ namespace Minesweeper
        
         public Form1()
         {
+      
             InitializeComponent();
 
             //HINT For SELF: try using arr[0, 0].ImageKey = "x"; for mine and something else for others.
-            
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
         }
 
         
 
+
+        public void resetGame()             //reset the game when needed(new button, smiley, game lost)
+       {
+            for (int row = 0; row < 8; row++)     //iterating through each cell
+            {
+                for (int column = 0; column < 8; column++)
+                {
+                    set_Buttons();
+                    try
+                    {
+                        arr[row, column].Enabled = true;
+                        arr[row, column].BackgroundImage = null;
+                        arr[row, column].Text = "";
+                        settingBoard();
+                    }
+                    catch (Exception ex)
+                    { MessageBox.Show(ex.ToString()); }
+                }
+            }
         
-      
+        }
 
         private void smileyButton_Click(object sender, EventArgs e)
         {
@@ -40,8 +55,10 @@ namespace Minesweeper
             //smileyButton.Image= objectImg;
             //smileyButton.Width = objectImg.Width;
             //smileyButton.Height = objectImg.Height;
-            set_Buttons();
-            settingBoard();
+            resetGame();
+
+            //set_Buttons();
+            //settingBoard();
         }
 
         
@@ -74,9 +91,9 @@ namespace Minesweeper
             //    timeThread.Start();
             //    clickcounter++;
             //}
+            
+
             Button btn = (Button)sender;
-
-
             int selColumn;
             int selRow;
             string tempstr = (string)btn.Tag;
@@ -91,6 +108,7 @@ namespace Minesweeper
                 Image mineImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\mine_minesweeper.PNG");
                 btn.BackgroundImage = mineImage;
                 MessageBox.Show("You Lost the game");
+                resetGame();
             }
             else
             {
@@ -99,7 +117,8 @@ namespace Minesweeper
                 {
                     case 0:
                         Image zeroImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\0.PNG");
-                        btn.BackgroundImage = zeroImage; 
+                        btn.BackgroundImage = zeroImage;
+ 
                         break;
                     case 1:
                          Image oneImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\1.PNG");
@@ -137,7 +156,7 @@ namespace Minesweeper
                 }
             }
         }
-        public static Button[,] arr = new Button[8, 8];
+        public static Button[,] arr = new Button[8, 8];     //button array refrencing to the each cell
         public void set_Buttons()
         {
             
@@ -206,7 +225,7 @@ namespace Minesweeper
             arr[7, 6] = cell_63;
             arr[7, 7] = cell_64;
           
-        }
+        }           //assinging cell value to each button in array
 
        public static string[,] value = new string[8, 8];
         public static void settingBoard()
@@ -540,6 +559,36 @@ namespace Minesweeper
                 }
             }
         }
+
+        bool[,] flag = new bool[8, 8];          //flag value for each cell
+        private void placeFlags(object sender, MouseEventArgs e) //event for right click 
+        {
+            Button btn = (Button)sender;
+            int selColumn;
+            int selRow;
+            string tempstr = (string)btn.Tag;
+            int tempTag = Int32.Parse(tempstr);
+            selColumn = tempTag % 8;
+            selRow = tempTag / 8;
+            if (e.Button == MouseButtons.Right)
+            {
+                
+               if(flag[selRow,selColumn]== false)
+               {
+                Image flagImage = Image.FromFile("D:\\Myproject\\Minesweeper\\images\\flag.PNG");
+                btn.BackgroundImage = flagImage;        // to flag the button
+                flag[selRow, selColumn] = true;
+               }
+               else{
+                   btn.BackgroundImage = null;          //to unflag the button
+                   flag[selRow, selColumn] = false;
+                   
+               }
+            }
+
+        }
+
+       
         
     }
 }
